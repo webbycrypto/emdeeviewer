@@ -43,8 +43,6 @@ The application menu provides access to file opening, printing, sidebar visibili
 
 ## Build from source
 
-Before publishing, replace the placeholder module path in `go.mod` with the path of your GitHub repository.
-
 1. Install Go from <https://go.dev/dl/>.
 2. Confirm the Microsoft Edge WebView2 Runtime is installed.
 3. Run `build.bat` from the project directory.

@@ -17,3 +17,4 @@ Thumbs.db
 
 # Local release assets
 assets/app.ico
+*.sha256
