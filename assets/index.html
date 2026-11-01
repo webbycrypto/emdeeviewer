@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>Emdee Viewer - Markdown File Viewer</title><style>/*__APP_CSS__*/</style></head>
+<body><div class="app-shell">
+<header class="topbar">
+  <div class="menu-wrap">
+    <button class="menu-button" id="menuButton" title="App menu" aria-label="Open app menu" aria-expanded="false">☰</button>
+    <div class="app-menu" id="appMenu" hidden>
+      <button class="menu-item" id="menuOpenButton"><span class="menu-icon">＋</span><span>Open file</span><kbd>Ctrl O</kbd></button>
+      <button class="menu-item" id="printButton"><span class="menu-icon">🖶</span><span>Print document</span><kbd>Ctrl P</kbd></button>
+      <button class="menu-item" id="menuSidebarButton"><span class="menu-icon">◧</span><span id="sidebarMenuLabel">Hide sidebar</span></button>
+      <div class="menu-divider"></div>
+      <label class="menu-label" for="themeSelect">APPEARANCE</label>
+      <select id="themeSelect" class="font-select"><option value="light">Light</option><option value="dark">Dark</option></select>
+      <div class="menu-divider"></div>
+      <div class="menu-label">TEXT SIZE</div>
+      <div class="menu-size-row"><button class="size-button" id="decreaseText" title="Decrease text size">A−</button><span id="fontSizeValue">14 px</span><button class="size-button" id="increaseText" title="Increase text size">A+</button></div>
+      <div class="menu-divider"></div>
+      <label class="menu-label" for="fontSelect">READING FONT</label>
+      <select id="fontSelect" class="font-select"><option value="system">System (Segoe UI)</option><option value="arial">Arial</option><option value="georgia">Georgia</option><option value="verdana">Verdana</option><option value="mono">Consolas</option></select>
+      <div class="menu-divider"></div>
+      <button class="menu-item" id="exitButton"><span class="menu-icon">⏻</span><span>Exit</span></button>
+    </div>
+  </div>
+  <div class="tabs" id="tabs" aria-label="Open documents"></div>
+  <button class="new-tab-button" id="newTabButton" title="Open another document" aria-label="Open another document">＋</button>
+  <input id="fileInput" type="file" accept=".md,.markdown,.mdown,.mkd,.txt,text/markdown" multiple hidden>
+</header>
+<main class="main-layout"><aside class="sidebar" id="sidebar">
+  <div class="sidebar-top"><span>ON THIS PAGE</span><button class="sidebar-collapse" id="sidebarCollapseButton" title="Hide sidebar" aria-label="Hide sidebar">‹</button></div>
+  <section class="outline-section"><nav class="toc" id="toc"><div class="sidebar-empty">Open a document to see its headings.</div></nav></section>
+</aside>
+<section class="reading-area"><div class="document-scroll" id="documentScroll"><article class="markdown-body empty-state" id="document"><div class="welcome"><div class="welcome-symbol">▤</div><div class="eyebrow">A QUIETER WAY TO READ</div><h1>Your documents, in focus.</h1><p>Open one or more Markdown files. Everything stays on your computer, with a clean space to read and explore.</p><button class="welcome-button" id="welcomeOpenButton">Open a Markdown file <span>Ctrl O</span></button><section class="home-recents" id="homeRecents" hidden><div class="home-recents-heading"><span>RECENT FILES</span><span class="recent-limit">LAST 5</span></div><div class="home-recent-list" id="homeRecentList"></div></section><div class="welcome-hint">You can also drag files into this window</div></div></article></div></section></main>
+<div class="drop-overlay" id="dropOverlay"><div class="drop-card"><div class="drop-symbol">↓</div><b>Drop to open</b><span>Documents will open in new tabs</span></div></div>
+</div><script>/*__INITIAL_DOCUMENT__*/</script><script>/*__APP_JS__*/</script></body></html>

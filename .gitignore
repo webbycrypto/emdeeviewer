@@ -1,0 +1,19 @@
+# Build outputs
+*.exe
+*.dll
+*.syso
+*.test
+*.out
+
+# Go workspace and tooling
+go.work
+go.work.sum
+
+# Local IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local release assets
+assets/app.ico
